@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <h1 class="first-chapter">A Smarter Way to Learn JavaScript</h1>
+    </div>
+    <div class="container1">
+        <div class="child1">
+            <h2 class="alert1-heading">Alerts</h2>
+            <p class="alert1">
+                An <strong>alert</strong> is a box that pops up to give the user a message. Here's code for an alert that
+                displays the message "Thanks for your input!"
+            </p>
+            <p class="code" ><b>alert("Thanks for Chosen");</b></p>
+         </div>
+         <div class="child2">
+             <h2 class="alert1-heading">Variables for Strings</h2>
+               <p class="alert1">
+                  A <strong>variable</strong> is created when you write var (for variable) followed by the name that you
+                  choose to give it. It takes on a particular value when you assign the value to it. This is a
+                  JavaScript statement that creates the variable name and assigns the value <b>"Mark"</b> to it.
+                 </p>
+                 <p class="code" ><b>var name = "Mark";<br/> alert(" Thank you " + name);</b></p>
+         </div>
+    </div>
+    <div class="container2">
+         <div class="child1">
+             <h2 class="alert1-heading">Variables for Numbers</h2>
+              <p class="alert1">
+                A string isn't the only thing you can assign to a variable. You can also assign a number.</p>
+                <p class="code" ><b>var weight = 150;</b></p>
+              <p class="alert1">
+                  If you enclose a number in quotation marks, it's a string. JavaScript can't do addition on it.
+                    It can do addition only on numbers not enclosed in quotes.
+                    Now look at this code.
+              </p>
+            <p class="code" ><b>var originalNum = 23; <br/>var newNum = originalNum + 7;</b></p>
+         </div>
+         <div class="child2">  
+             <h2 class="alert1-heading">Variable Names Legal and Illegal</h2>
+                <ul>
+                    <li class="list">A variable name can't contain any spaces.</li><br/>
+                    <li class="list">A variable name can contain only letters, numbers, dollar signs, and underscores.</li><br/>
+                    <li class="list">Though a variable name can't be any of JavaScript's keywords, it can contain keywords.
+                        For example, <i>userAlert</i> and <i>myVar</i> are legal.</li><br/>
+                    <li class="list">Capital letters are fine, but be careful. Variable names are case sensitive. A <i>rose</i> is not a
+                        <i>Rose</i>. If you assign the string "Floribundas" to the variable <i>rose</i>, and then ask JavaScript
+                        for the value assigned to <i>Rose</i>, you'll come up empty.</li><br/>
+                    <li class="list">I teach the <i>camelCase</i> naming convention. Why <q>camelCase</q>? Because there is a hump or
+                        two (or three) in the middle if the name is formed by more than one word. A camelCase
+                        name begins in lower case. If there's more than one word in the name, each subsequent
+                        word gets an initial cap, creating a hump. If you form a variable name with only one
+                        word, like <i>response</i>, there's no hump. It's a camel that's out of food. Please adopt the
+                        camelCase convention. It'll make your variable names more readable, and you'll be less
+                        likely to get variable names mixed up.</li><br/>
+                    <li class="list">Make your variable names descriptive, so it's easier to figure out what your code means
+                        when you or someone else comes back to it three weeks or a year from now. Generally,
+                        <i>userName</i> is better than <i>x</i>, and <i>faveBreed</i> is better than <i>favBrd</i>, though the shorter names
+                        are perfectly legal. You do have to balance readability with conciseness, though.
+                        <i>bestSupportingActressInADramaOrComedy</i> is a model of clarity, but may be too much
+                        for most of us to type or read. I'd shorten it.</li>
+                </ul>
+         </div>
+    </div>
+    <div class="container3">
+         <div class="child1">
+             <h2 class="alert1-heading">Math expressions</h2>
+              <p class="alert1">
+                The arithmetic operators I've been using, +, -, *, and /, are undoubtedly familiar to you.
+                This one may not be:
+              </p>
+            <p class="code" ><b>var whatsLeftOver = 10 % 3; <br/></b></p>
+               <p class="alert1"> % is the modulus operator. It doesn't give you the result of dividing one number by
+                    another. It gives you the remainder when the division is executed. </p>
+            <p class="code" ><b>
+                var whatsLeftOver = 10 / 3;<br/>
+                var whatsLeftOver = 10 * 3;<br/>
+                var whatsLeftOver = 10 + 3;<br/>
+                var whatsLeftOver = 10 - 3;
+                </b></p>
+         </div>
+         <div class="child2">  
+             <h2 class="alert1-heading">Math expressions<br/> Unfamiliar operators</h2>
+             <p class="alert1">
+                There are several specialized math expressions you need to know. Here's the first one.
+                <p class="code" ><b>num++;<br/></b></p>
+                <p class="alert1">This is a short way of writing...</p>
+                    <p class="code" ><b>num = num + 1;<br/></b></p>
+              </p>
+                <b>1 var num = 1;</b><br/>
+                <b> 2 var newNum = num++;</b><br/>
+                <p class="alert1"> 
+                In the example above, the original value of <i>num</i> is assigned to <i>newNum</i>, and <i>num</i> is
+                incremented afterward. If <i>num</i> is originally assigned 1 in the first statement, the second
+                statement boosts its value to 2. <i>newNum</i> gets the original value of <i>num</i>, 1.</p>
+
+                <b>1 var num = 1;</b><br/>
+                <b>2 var newNum = ++num;</b><br/>
+                <p class="alert1"> 
+                In the statements above, both num and newNum wind up with a value of 2.
+                If you put the minuses after the variable, the new variable is assigned the original value,
+                and the first variable is decremented.</p>
+                <b>1 var num = 1;</b><br/>
+                <b>2 var newNum = num--;</b><br/>
+                <p class="alert1"> 
+                <i>num</i> is decremented to 0, and <i>newNum</i> gets the original value of <i>num</i>, 1.
+                But if you put the minuses before the variable, <i>newNum</i> is assigned the decremented, not
+                the original, value. Both <i>num</i> and <i>newNum</i> wind up with a value of 0.</p>
+                <b>1 var num = 1;</b><br/>
+                <b>2 var newNum = --num;</b><br/>
+         </div>
+    </div>
+    
+</body>
+</html>
