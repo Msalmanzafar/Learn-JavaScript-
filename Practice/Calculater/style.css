@@ -13,38 +13,65 @@ body{
     box-shadow: 0px 2px 2px 1px gray;
 }
 span{
+    width:40%;
     background: white;
-    width: 200px;
-    height: auto;
-    padding: 7px;
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
     border-radius: 5px;
     margin-left: 50px;
+    font-weight: bold;
+    display:inline-block;
 }
 .mini-container{
-    width:97%;
+    width:100%;
     height: auto;
     background: -webkit-linear-gradient(lightcyan,lightblue);
     border-radius: 8px 8px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: bold;
-    text-shadow: 0px 2px 2px gray;
+    text-shadow: 0px 2px 2px white;
     text-align: center;
-    padding: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     box-shadow: 0px 1px 1px gray;
+    color: blue;
 }
 .big-container{
     width: 99%;
-    height: 346px;
-    border:2px solid gray;
+    height: 350px;
+    /*border:2px solid gray;*/
+    padding-top: 10px;
 }
 .add{
     padding: 5px 15px 5px 15px;
     margin-top: 15px;
     margin-left: 40px;
+    font-weight: bold;
 }
 .sub{
-    padding: 5px 15px 5px 15px;
+    padding: 5px 18px 5px 17px;
     margin-top: 15px;
     margin-left: 40px;
+    font-weight: bold;
+}
+.mul{
+    padding: 5px 17px 5px 17px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.div{
+    padding: 5px 18px 5px 18px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.mod{
+    padding: 5px 26px 5px 26px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-weight: bold;
 }
