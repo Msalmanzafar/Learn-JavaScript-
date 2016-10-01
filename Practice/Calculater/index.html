@@ -10,20 +10,28 @@
     <div class="container">
         <div class="mini-container">Calculator</div>
         <div class="big-container">
-            <button class="add" onclick="Addfunction()">Addition +</button>
-            <span id="addition"></span>
-            <br/>
-             <button class="sub" onclick="Subfunction()">Subtract -</button>
-            <span id="subtraction"></span>
-            <br/>
-            <button class="mul" onclick="Mulfunction()">Multiply x</button>
-            <span id="multiplication"></span>
-            <br/>
-            <button class="div" onclick="Divfunction()">Division /</button>
-            <span id="division"></span>
-            <br/>
-            <button class="mod" onclick="Modfunction()">Mod %</button>
-            <span id="mod"></span>
+                <table class="table1" id="re">
+                <tr>
+                    <td class="option"><button class="add" onclick="Addfunction()">Addition +</button></td>
+                    <td class="result-box" id="addition"></td>
+                </tr>
+                <tr>
+                    <td class="option"><button class="sub" onclick="Subfunction()">Subtract -</button></td>
+                    <td class="result-box" id="subtraction"></td>
+                </tr>
+                <tr>
+                    <td class="option"><button class="mul" onclick="Mulfunction()">Multiply x</button></td>
+                    <td class="result-box" id="multiplication"></td>
+                </tr>
+                <tr>
+                    <td class="option"><button class="div" onclick="Divfunction()">Division /</button></td>
+                    <td class="result-box" id="division"></td>
+                </tr>
+                <tr>
+                    <td class="option"><button class="mod" onclick="Modfunction()">Mod %</button></td>
+                    <td class="result-box" id="mod"></td>
+                </tr>   
+            </table>    
         </div>
     </div>
 </body>

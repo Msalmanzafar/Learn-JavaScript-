@@ -32,7 +32,7 @@ function Mulfunction(){
     var Add2 = prompt(y,y1);
 
     var int = parseInt(Add1) * parseInt(Add2);
-    document.getElementById("multiplication").innerHTML=  Add1 + " * " + Add2 +  " = " +  int;
+    document.getElementById("multiplication").innerHTML=  Add1 + " x " + Add2 +  " = " +  int;
 }
 function Divfunction(){
     var x = "1st Number for Divide.";
