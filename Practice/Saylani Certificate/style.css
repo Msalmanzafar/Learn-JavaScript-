@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgoldenrodyellow;
+    background-image: url("images/mass-training.jpg");
+    background-repeat: no-repeat;
+}
+.container1{
+    width: 520px;
+    height: 650px;
+    border: 45px solid darkslategray;
+    border-radius: 3%;
+    margin: 20px auto 0px auto;
+    box-shadow: 0px 8px 8px 8px gray;
+    background-color: white;
+}
+.container1-child{
+    width: 99%;
+    height: auto;
+     /*border: 2px solid yellow;*/
+    text-align: center;
+    background-color: white;
+    margin-top: 50px;
+}
+.logo-size{
+    width:250px;
+    /*border:2px solid red;*/
+}
+.title{
+    text-transform: capitalize;
+    text-align: center;
+    color: blue;
+    text-shadow: 0px 1px 1px lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.container2{
+    width: 99%;
+    height: auto;
+    /*border: 2px solid red;*/
+    margin: 40px auto 0px auto;
+    background-color: white;
+}
+
+.text-container{
+    width:90%;
+    /*border: 2px solid blue;*/
+    margin: 0px auto 0px auto;
+}
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: darkcyan;
+    font-weight: bold;
+    text-align: left;
+}
+.text2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: darkcyan;
+    font-weight: bold;
+    margin-left:30%;
+    text-align: right;
+}
+.user{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: deepskyblue;
+    text-decoration: underline;
+}
+.footer{
+    width:99%;
+    height: auto;
+    /*border: 2px solid blue;*/
+    margin: 80px auto 0px auto;
+    text-align: right;
+}
+.footer img{
+    width: 60%;
+}
