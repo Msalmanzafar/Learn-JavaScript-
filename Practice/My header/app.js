@@ -1,4 +1,3 @@
-
 function dateFunction(){
     var time = new Date();
     var hr = time.getHours();
@@ -6,7 +5,6 @@ function dateFunction(){
     var sec = time.getSeconds();
     var day = time.getDay();
     
-
     // day conditions for converting numbers into string...
     if (day == 0){
         day = "Sun";
@@ -46,24 +44,13 @@ function dateFunction(){
         sec = "0" + sec;
     }
     if(hr >= 12){
-        document.getElementById("demo").innerHTML= hr + " : " + min + " : " + sec +" PM " + "<span>" + day + "</span>";
+        document.getElementById("time").innerHTML= hr + " : " + min + " : " + sec +" PM " + "<span>" + day + "</span>";
     }
     else{
         if(hr == 0){
             hr=12; 
         }
-        document.getElementById("demo").innerHTML= hr + " : " + min +" : " + sec + " AM " + "<span>" + day + "</span>";
+        document.getElementById("time").innerHTML= hr + " : " + min +" : " + sec + " AM " + "<span>" + day + "</span>";
     }
     var t = setTimeout(dateFunction, 500);
 }
-
-
-
-
-
-var a = prompt("Please Enter Alphabatic Argument!","Enter What you want...");
-
-var newArray = [];
-
-newArray= a.push();
-document.getElementById("todo").innerHTML=newArray;
