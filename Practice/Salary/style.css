@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.back-box{
+    width: 100%;
+    height: 660px;
+    background-image: url(images/slide4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 660, cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+.my-box{
+    /*border: 1px solid red;*/
+    padding-bottom: 20px;
+    margin-top: -600px;
+}
+.heading{
+    text-align: center;
+    /*border: 1px solid blue;*/
+    margin: 0px auto 0px auto;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px black;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+.inout-box{
+    background-color: rgba(2, 2, 2, 0.5);
+    /*border: 1px solid blue;*/
+    margin: 30px auto 0px auto;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+}
+.user-input{
+    width: 50%;
+    padding: 5px;
+    line-height: 20px;
+    border: hidden;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: 0px;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+.button-1{
+    width: 94px;
+    height: 38px;
+    border: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: -webkit-linear-gradient(lightblue,darkcyan);
+    background: -moz-linear-gradient(lightblue,darkcyan);
+    background: -o-linear-gradient(lightblue,darkcyan);
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: 0px;
+}
+.button-1:hover{
+    background: darkcyan;
+    transition: 0.4s;
+    box-shadow: 0px 4px 6px black,0px -2px 6px black;
+}
+.text-box{
+    background-color: rgba(2, 2, 2, 0.5);
+    /*border: 1px solid blue;*/
+    margin: 0px auto 0px auto;
+    width: 70%;
+    height: auto;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+.text-box p{
+    margin-left:25%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    font-size: 1.5em;
+}
+.text-box span{
+    margin-left: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    font-size: 1.1em;
+    text-decoration: underline;
+}

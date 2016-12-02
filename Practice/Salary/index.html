@@ -8,18 +8,20 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <div class="my-box conatiner-fluid">
-        <div class="inout-box conatiner-fluid">
+    <div class="back-box "></div>
+    <div class="my-box conatiner-fluid col-md-12">
+        <div class="inout-box">
+            <div class="heading">Salary Allowances</div>
             <form >
                 <input type="text" class="user-input" id="userInput" placeholder="Write Your Current Salary..!"/><br/>
-                <input type="button" value="Click Me" onclick="userSalary" class="button-1"/>
+                <input type="button" value="Click Me" onclick="userSalary()" class="button-1"/>
             </form>
         </div>
-        <div class="text-box conatiner-fluid">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+        <div class="text-box : conatiner-fluid">
+            <p>Basic Salary :<span id="basic"> </span></p>
+            <p>Rent Allowance :<span id="rent"> </span></p>
+            <p>House Allowance :<span id="house"> </span></p>
+            <p>Net Salary :<span id="net"> </span></p>
         </div>
     </div>
 </body>
