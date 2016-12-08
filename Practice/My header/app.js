@@ -54,3 +54,9 @@ function dateFunction(){
     }
     var t = setTimeout(dateFunction, 500);
 }
+
+
+var aray = ["salman","ahmed","niaz"];
+
+
+
