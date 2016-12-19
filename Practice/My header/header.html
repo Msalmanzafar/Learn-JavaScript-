@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Sky-Header</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="bootstrap.min.css"/>
@@ -9,20 +10,19 @@
 </head>
 <body onload="dateFunction()">
     <div class="header-box container-fluid col-md-12">
-        <div class="logo col-md-2">
-            <marquee   scrollamount="3">SKYNET</marquee>
+        <div class="logo col-md-3">
+            <marquee behavior="slide"  scrollamount="3">SKYNET</marquee>
         </div>
         <div class="time col-md-3 col-md-offset-6">
             <p id="time"></p>
         </div>
-        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only"></span>
+        <button type="button" class="navbar-toggle edit" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </button>-->
+        </button>
         <div class="menu col-md-12 navbar-collapse collapse">
-            <div class="menu-list">
+            <div class="menu-list navbar-collapse" >
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Courses</a></li>

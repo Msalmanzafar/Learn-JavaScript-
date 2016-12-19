@@ -22,10 +22,11 @@ body{
 .logo marquee{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-	font-size: 2.5em;
+	font-size: 3vw;
 	color: darkslateblue;
-	text-shadow: 2px 2px 8px white, 2px 5px 5px darkslategray;
+	text-shadow: 2px 1px 3px white, 2px 3px 5px darkslategray;
     letter-spacing: 0.09em;
+    cursor: pointer;
 }
 .time{
     height: auto;
@@ -35,7 +36,7 @@ body{
 }
 .time p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.4em;
+    font-size: 2.4vw;
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 6px black;
@@ -66,17 +67,25 @@ body{
 .menu-list ul li a{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: normal;
     display: block;
     text-shadow: 0px 2px 4px dimgray;
+    
 }
 .menu-list ul li a:hover{
     text-decoration: none;
     color: white;
     border-bottom: 4px solid white;
-    transition: 0.4s;
+    transition: 0.5s;
 }
+.edit span{
+    background-color: black;
+    position: relative;
+    z-index: 9;
+    border: 2px solid black;
+}
+
 /*-----------------------------For Box---------------------------------------------*/
 .box{
     /*border:2px solid red;*/
@@ -88,7 +97,7 @@ body{
     margin-top: 40px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: blue;
     text-shadow: 2px 3px 4px gray;
     font-weight: bold;
@@ -102,15 +111,18 @@ body{
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 .link-box1 a img{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box1 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box2{
     width: 280px;
@@ -125,10 +137,12 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box2 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box3{
     width: 280px;
@@ -143,10 +157,12 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box3 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box4{
     width: 280px;
@@ -161,10 +177,12 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box4 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box5{
     width: 280px;
@@ -179,10 +197,12 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box5 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box6{
     width: 280px;
@@ -197,10 +217,12 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box6 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
 .link-box7{
     width: 280px;
@@ -215,8 +237,11 @@ body{
     width: 100%;
     height: 160px;
     border-radius: 8px;
+    transition: 1s;
 }
 .link-box7 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lightgrey;
-    transition: 0.3s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
+    transition: 0.8s;
+    transform: rotate(2deg);
 }
+
