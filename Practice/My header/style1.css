@@ -69,10 +69,10 @@
 .box3{
     /*border: 1px solid blue;*/
     position: relative;
-    top: -30px;
+    padding-top: 50px;
 }
 .video-box{
-    width: 60%;
+    width: 70%;
     /*border: 1px solid blue;*/
     height: auto;
 }
@@ -93,8 +93,19 @@
 .box5{
     /*border: 1px solid blue;*/
 }
-
-
+.box6{
+    /*border: 1px solid blue;*/
+}
+.courses-box img{
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 0px 3px 6px gray;
+    border-radius: 7px;
+    /*margin-left: -120px;*/
+}
+.box6 #feedback{
+    margin-left: 8%;
+}
 
 
 
