@@ -106,9 +106,18 @@
 .box6 #feedback{
     margin-left: 8%;
 }
-
-
-
+.box7{
+    border: 1px solid blue;
+}
+.box7-form{
+    border: 1px solid blue;
+}
+.contact{
+    margin-bottom: 10px;
+}
+.button{
+    border: 2px solid red;
+}
 
 
 

@@ -84,5 +84,5 @@ function userForm(){
     localStorage.setItem('UserName',name);
     localStorage.setItem('UserEmail',email);
     localStorage.setItem('Password',password);
-    
 }
+
