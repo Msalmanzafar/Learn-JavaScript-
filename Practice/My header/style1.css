@@ -124,12 +124,51 @@
     /*border: 2px solid red;*/
     margin-left: 20%;
 }
-
-
-
-
-
-
+.footer-box{
+    /*border: 2px solid red;*/
+    background-color: lightskyblue;
+    margin-bottom: 0px;
+}
+.box8{
+    /*border: 2px dotted blue;*/
+}
+.box8 p{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-link{
+    /*border: 2px dotted red;*/
+}
+.footer-link ul{
+    list-style: none;
+}
+.footer-link ul li{
+    border-bottom: 1px solid white;
+    height: 34px;
+    line-height: 34px;
+}
+.footer-link ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.footer-link ul li a:hover{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    text-shadow: 0px 2px 4px gray;
+}
+.footer-img{
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+.footer-img a{
+    margin-right: 3%;
+}
+.footer-img img:hover{
+    box-shadow: 0px 4px 8px blue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
 
 
 
