@@ -2,8 +2,9 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: gray !important;
-    background-image: url(images/technology-background-gray.jpg);
+    background-image: url(images/vignette-it-is-about-people.jpg);
     background-repeat: repeat-y;
+    background-size: 100% 700px;
 }
 .mid{
     margin: 50px auto !important;
@@ -47,7 +48,6 @@ body{
     cursor: pointer;
     border: 1px solid wheat;
     margin-bottom: 50px;
-    outline: 0px;
 }
 .button:hover{
     transition: 0.4s;
@@ -57,6 +57,6 @@ body{
 }
 /*.Cong-message h2{
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bold;
 }*/

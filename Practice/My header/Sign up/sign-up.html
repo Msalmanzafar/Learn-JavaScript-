@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--<div class="content">
+        <div class="backgroud"></div>
+    </div>-->
+    <nav class="navbar header navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-color icon-bar"></span>
+                    <span class="icon-color icon-bar"></span>
+                    <span class="icon-color icon-bar"></span>
+                    <!--<span class="icon-color icon-bar"></span>-->
+                </button>
+                <a href="JavaScript:void(0)" class="navbar-brand" id="logo"><marquee behavior="slide" scrollamount="3">SKY SCHOOL</marquee></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav link1 navbar-nav">
+                    <li><a id="link" href="index.html">Home</a></li>
+                    <li><a id="link" href="gallery,html">Gallery</a></li>
+                    <li><a id="link" href="projects.html">Projects</a></li>
+                    <li><a id="link" href="courses.html">Courses</a></li>
+                    <li><a id="link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--<div class="container header-box">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-warning">Sign Up</button>
+            <button type="button" class="btn btn-info">Sign In</button>
+        </div>
+    </div>-->
+
+    <div class="container box1">
+            <div class="col-md-6 box-sign-up">
+                 <h1>Sign Up</h1>
+                 <form name="myForm" action="login.html">
+                     <div class="form-group sign-form">
+                         <blockquote>
+                            <label for="name">Enter name: </label><br/>
+                            <span id="checkName"></span>
+                            <input id="name" type="text" class="form-control" onBlur="checkName()" placeholder="Enter Name"  onkeypress="keyPress()"/>
+                         </blockquote>
+                     </div>
+                     <div class="form-group sign-form">
+                         <blockquote>
+                            <label for="email">Enter email: </label><br/>
+                            <span id="checkEmail"></span>
+                            <input class="form-control" id="email" name="email" type="email" onBlur="checkEmail()" placeholder="Enter Email"  onkeypress="keyPress()"/>
+                        </blockquote>
+                     </div>
+                     <div class="form-group sign-form">
+                         <blockquote>
+                            <label for="password">Enter password: </label><br/>
+                            <span id="checkPassword"></span>
+                            <input class="form-control" id="password" type="password" onBlur="checkPassword()"  placeholder="Enter Password"  onkeypress="keyPress()"/><br/>
+                        </blockquote>
+                     </div>
+                     <input class="btn btn-info" style="font-size:1.4em" onclick="userForm()" value="Sign Up" type="button"/>
+                 </form>
+            </div>
+        </blockquote>
+    </div>
+    <div class="container box1">
+        <blockquote>
+            <div class="col-md-6 box-sign-up">
+                 <h1>Sign In</h1>
+                 <form name="myForm" action="login.html">
+                     <div class="form-group sign-form">
+                         <label for="email">Enter email: </label><br/>
+                         <span id="checkEmail"></span>
+                         <input class="form-control" id="email" name="email" type="email" onBlur="checkEmail()" placeholder="Enter Email"  onkeypress="keyPress()"/>
+                     </div>
+                     <div class="form-group sign-form">
+                         <label for="password">Enter password: </label><br/>
+                         <span id="checkPassword"></span>
+                         <input class="form-control" id="password" type="password" onBlur="checkPassword()"  placeholder="Enter Password"  onkeypress="keyPress()"/><br/>
+                     </div>
+                     <input class="btn btn-info" style="font-size:1.4em" onclick="userForm()" value="Sign Up" type="button"/>
+                 </form>
+            </div>
+        </blockquote>
+    </div>
+
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>

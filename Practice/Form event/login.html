@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="login.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+</head>
+<body>
+    <div class="container mid">
+        <div class="row">
+            <div class="col-md-12">
+                 <h1>Log In</h1>
+                 <form name="myForm" action="login.html">
+                     <div class="form-group sign-form">
+                         <label for="email">Enter email: </label><br/>
+                         <span id="checkEmail"></span>
+                         <input class="form-control" id="email" name="email" type="email" onBlur="checkEmail()" placeholder="Enter Email" />
+                     </div>
+                     <div class="form-group sign-form">
+                         <label for="password">Enter password: </label><br/>
+                         <span id="checkPassword"></span>
+                         <input class="form-control" id="password" type="password" onBlur="checkPassword()"  placeholder="Enter Password"/><br/>
+                     </div>
+                     <input class="button" onkeypress="keyPress()" onclick="signIn()" value="Log In" type="button"/>
+                 </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    
+</body>
+</html>
