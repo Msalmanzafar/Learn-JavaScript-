@@ -29,6 +29,9 @@ var array = [];
 
 function keyPress(){
     if (event.keyCode == '13') {
+        checkName();
+        checkEmail();
+        checkPassword();
         userForm();
     }
 }
@@ -46,7 +49,6 @@ function checkName(){
     else{
         var span = document.getElementById("checkName");
         span.style.display="none";
-        userForm();
     }
         
 }
@@ -69,7 +71,6 @@ function checkEmail(){
     else{
         var span = document.getElementById("checkEmail");
         span.style.display="none";
-        userForm();
     }
 }
 /*--------------------------------For Password--------------------------------------------*/
@@ -80,16 +81,15 @@ function checkPassword(){
         document.getElementById("checkPassword").className="render";
         document.getElementById("checkPassword").innerHTML= mes;
     }
-    else if(password.length <= 7){
-        var mes = "Please Enter Your 8 Digits Or Mores...!";
-        document.getElementById("checkPassword").className="render";
-        document.getElementById("checkPassword").innerHTML= mes;
-    }
-    else{
-        var span = document.getElementById("checkPassword");
-        span.style.display="none";
-        userForm();
-    }
+    //else if(password.length <=7){
+        // var mes = "Please Enter Your 8 Digits Or Mores...!";
+        // document.getElementById("checkPassword").className="render";
+        // document.getElementById("checkPassword").innerHTML= mes;
+    //}
+    // else{
+    //     var span = document.getElementById("checkPassword");
+    //     span.style.display="none";
+    // }
 }
 
 
@@ -98,32 +98,42 @@ function userForm(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    if(name == ""){
-        checkName();
-    }
-    else if(email == ""){
-        checkEmail();
-    }
-    else if (password == ""){
-        checkPassword();
-    }else{
-        var newUser = {
-            userName: name,
-            userEmail: email,
-            userPassword: password
-        }
-        array.push(newUser);
-        localStorage.setItem('User-Name',name);
-        localStorage.setItem('User-Email',email);
-        localStorage.setItem('User-Password',password);
-        sweetAlert("Done", "Thanks For Sign Up..!", "success",function(){
-            window.location.href = ('./login.html');
-        });
-    }
-    console.log(array);
-    var userData= JSON.stringify(array);
-    console.log(userData);
     
+    checkName();
+    checkEmail();
+    checkPassword();
+
+    var newUser = {
+        userName: name,
+        userEmail: email,
+        userPassword: password
+    }
+    array.push(newUser);
+    if(name == '' || email == '' || password == ''){
+        console.log("Form Empty");
+    }
+    else if(password.length <= 7){
+        var mes = "Please Enter Your 8 Digits Or Mores...!";
+        document.getElementById("checkPassword").className="render";
+        document.getElementById("checkPassword").innerText= mes;
+    }
+    else{
+            var span = document.getElementById("checkPassword");
+            span.style.display="none";
+            localStorage.setItem('User-Name',name);
+            localStorage.setItem('User-Email',email);
+            localStorage.setItem('User-Password',password);
+            swal({
+                title: "Done!",
+                text: "Your new Account has been created..",
+                type: "success",
+                },
+                function(){
+                     window.location.href=("./login.html");         
+            });
+    }
+    var userData= JSON.stringify(array);    
+    console.log(array);
 }
 
 function signIn(){

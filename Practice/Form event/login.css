@@ -2,17 +2,19 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: gray !important;
-    background-image: url(images/vignette-it-is-about-people.jpg);
-    background-repeat: repeat-y;
-    background-size: 100% 700px;
+    background-image: url(images/back.jpg);
+    background-repeat: repeat;
+    background-repeat: cover;
 }
 .mid{
-    margin: 50px auto !important;
+     position: relative;
+    top: 100px;
+    margin: 0px auto !important;
     /*border: 1px solid red;*/
-    width: 70% !important;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    box-shadow: 0px 1px 2px white;
+    width: 75% !important;
+    background-color: rgba(123,123,123,0.5);
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: -5px 15px 20px black,5px -10px 15px black;
 }
 .mid h1{
     text-shadow: 1px 4px 8px black;
@@ -47,7 +49,7 @@ body{
     border-radius: 3px;
     cursor: pointer;
     border: 1px solid wheat;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .button:hover{
     transition: 0.4s;

@@ -47,7 +47,7 @@
 }
 .box1{
     /*border: 1px solid blue;*/
-    top: 61px;
+    top: 51px;
     position: relative;
 }
 .wel{
@@ -70,6 +70,7 @@
     /*border: 1px solid blue;*/
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .video-box{
     width: 70%;
@@ -82,7 +83,7 @@
 }
 .subs-box{
     /*border: 2px solid gold;*/
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .subs-box p{
     font-size: 1.1em;

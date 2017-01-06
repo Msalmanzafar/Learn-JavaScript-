@@ -1,17 +1,21 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: gray !important;
-    background-image: url(images/technology-background-gray.jpg);
-    background-repeat: repeat-y;
+    background-color: white !important;
+    background-image: url(images/images.jpg);
+    background-repeat: repeat;
+    background-repeat: cover;
+    /*background: -webkit-linear-gradient(lightskyblue,lightseagreen); */
 }
 .mid{
-    margin: 50px auto !important;
+    position: relative;
+    top: 100px;
+    margin: 0px auto !important;
     /*border: 1px solid red;*/
-    width: 70% !important;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    box-shadow: 0px 1px 2px white;
+    width: 85% !important;
+    background-color: rgba(123,123,123,0.5);
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: -5px 15px 20px black,5px -10px 15px black;
 }
 .mid h1{
     text-shadow: 1px 4px 8px black;
@@ -26,12 +30,26 @@ body{
     line-height: 30px;
     font-weight: normal;
     color: white;
+    text-shadow: 0px 1px 1px black;
 }
 .render{
     color: red;
     margin-left: 1%;
     font-size: 1em;
-    transition: 0.5s;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 0.1em;
+}
+#checkName{
+    padding-bottom:5px;
+    transition: 0.5s; 
+}
+#checkEmail{
+    padding-bottom:5px;
+    transition: 0.5s; 
+}
+#checkPassword{
+    padding-bottom:5px;
+    transition: 0.5s; 
 }
 .span{
     display: none;
@@ -46,7 +64,7 @@ body{
     border-radius: 3px;
     cursor: pointer;
     border: 1px solid wheat;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     outline: 0px;
 }
 .button:hover{
