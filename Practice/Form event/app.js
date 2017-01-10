@@ -139,7 +139,8 @@ function userForm(){
 function signIn(){
     var userEmail = document.getElementById("email").value;
     var userPassword = document.getElementById("password").value;
-    var infoEmail = localStorage.getItem('User-Email');
+	
+	var infoEmail = localStorage.getItem('User-Email');
     var infoPassword = localStorage.getItem('User-Password');
     if(userEmail === infoEmail && userPassword === infoPassword){
         window.location.href =('./index.html');

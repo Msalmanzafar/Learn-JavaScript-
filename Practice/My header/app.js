@@ -60,9 +60,42 @@
 
 
 
-function signUp(){
+function newUser(){
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    console.log(name,email,password);
+    
+    if(name == ''|| name == " "){
+        var mes = "Please Enter Your Name..!";
+        document.getElementById("nameCheck").className="wrong";
+        document.getElementById("nameCheck").innerHTML=mes;
+    }
+    else{
+        document.getElementById("nameCheck").style.display="none";
+    }
+    if(email == ''|| email == " "){
+        var mes = "Please Enter Your Email..!";
+        document.getElementById("nameEmail").className="wrong";
+        document.getElementById("nameEmail").innerHTML=mes;
+    }
+    else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+        var mes = "Please Enter Valid Email..! (example@gmail.com)";
+        document.getElementById("checkEmail").className="render";
+        document.getElementById("checkEmail").innerHTML= mes;
+    }
+    else{
+        document.getElementById("nameEmail").style.display="none";
+    }
+    if(password == '' || password == " "){
+        var mes = "Please Enter Your Password..!";
+        document.getElementById("namePassword").className="wrong";
+        document.getElementById("namePassword").innerHTML=mes;
+    }
+    else{
+        document.getElementById("namePassword").style.display="none";
+    }
 }
