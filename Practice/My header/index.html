@@ -9,6 +9,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="style1.css"/>
+    <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 </head>
 <body>
     <!--<div class="content">
@@ -58,21 +60,21 @@
                     <div class="modal-body">
                         <div class="row">
                                 <div class="col-md-12">
-                                <form name="myName" >
+                                <form name="myForm" >
                                     <div class="form-group">
                                         <label for="name">Enter name:</label>
-                                        <div id="nameCheck"></div>
-                                        <input id="name" type="text" class="form-control" placeholder="Enter Name" />
+                                        <div id="checkName"></div>
+                                        <input id="name" type="text" class="form-control" onblur="checkName()" name="name" placeholder="Enter Name" />
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Enter email:</label>
-                                        <div id="nameEmail"></div>
-                                        <input id="email" type="text" class="form-control" placeholder="Enter Name" />
+                                        <div id="checkEmail"></div>
+                                        <input id="email" name="email" type="text" class="form-control" onblur="checkEmail()" placeholder="Enter Name" />
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Enter password:</label>
-                                        <div id="namePassword"></div>
-                                        <input id="password" type="text" class="form-control" placeholder="Enter Name" />
+                                        <div id="checkPassword"></div>
+                                        <input id="password" type="text" class="form-control" onblur="checkPassword()" placeholder="Enter Name" />
                                     </div>
                                 </form>
                                 </div>
@@ -80,7 +82,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-warning" data-dismiss="modal">Cencel</button>
-                        <button type="button" id="btnSignUp" class="btn btn-info" onclick="newUser()">Sign Up</button>
+                        <button type="button" id="btnSignUp" onkeypress="keyPress()" class="btn btn-info" onclick="userForm()">Sign Up</button>
                     </div>
                 </div>
                 </div>
