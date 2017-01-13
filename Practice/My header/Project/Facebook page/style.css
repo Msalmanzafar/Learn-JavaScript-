@@ -1,0 +1,344 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: -webkit-linear-gradient(#ffffff,lightgray);
+}
+.header-container{
+    width: 100%;
+    height: 82px;
+    /*border: 2px solid blue;*/
+    margin: 0px auto 0px auto;
+    background: #3b5998;
+    border-bottom: 1px solid darkblue;
+}
+.header-child1{
+    width: 40%;
+    height: auto;
+    /*border: 2px solid blue;*/
+    float: left;
+    padding: 0px;
+    text-align: center;
+}
+.header-child2{
+    width: 45%;
+    height: auto;
+   /*border: 2px solid blue;*/
+    float: right;
+    vertical-align: left;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.logo{
+    width:220px;
+    height: 55px;
+    margin-top: 20px;
+}
+.email-label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+.password-label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+.email{
+    width: 145px;
+    height: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    outline: 0px;
+    border: 0px;
+}
+.password{
+    width: 154px;
+    height: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    outline: 0px;
+    border: 0px;
+}
+.table{
+    border-collapse: separate;
+    border-spacing: 14px 0px;
+}
+td > a{
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+td > a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.login-button{
+    padding:5px 7px 5px 7px;
+    background-color: #6666B9;
+    border: hidden;
+    outline: 0px; 
+    color: white;
+    border: 1px solid #5959B4;
+    border-radius: 3px;
+}
+.login-button:hover{
+    background-color: #3b5998;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid darkblue;
+}
+/*---------------------------------Container-1---------------------------------------------------*/
+.container-1{
+    width: 100%;
+    height: 580px;
+     /*border: 2px solid red;*/
+}
+.container-child0{
+    width: 50%;
+    height: 530px;
+     /*border: 2px solid red;*/
+    float: left;
+}
+.container-child1{
+    width: 49%;
+    height: 550px;
+     /*border: 2px solid red;*/
+    float: right;
+    min-width: 40%;
+}
+.account-box{
+    width: 550px;
+    height: auto;
+     /*border: 2px solid red;*/
+}
+.heading-text{
+    padding: 20px 0px 10px 0px;
+    width: 550px;
+    height: auto;
+    /*border: 2px solid red;*/
+}
+.heading1{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.text1{
+    margin-left: 55px;
+    line-height: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.main-images{
+    width: 75%;
+    margin-left: 28%;
+    margin-top: 0px;
+}
+.text3{
+    margin-left: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: darkblue;
+    line-height: 1.5em;
+    margin-top: 40px;
+}
+.first-name{
+    width: 180px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: 0px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+    margin-left: 50px;
+    font-size: 1.1em;
+}
+.last-name{
+    width: 180px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: 0px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+    margin-left: 8px;
+    font-size: 1.1em;
+}
+.mobile-email{
+    width: 397px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: 0px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+    margin-left: 50px;
+    font-size: 1.1em;
+    margin-top: 9px;
+}
+.new-password{
+    width: 397px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: 0px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+    margin-left: 50px;
+    font-size: 1.1em;
+    margin-top: 9px;
+}
+.birth{
+    margin-left: 55px;
+    line-height: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.day{
+    padding: 5px;
+    margin-left: 50px;
+    border-radius: 2px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+}
+.month{
+    padding: 5px;
+    border-radius: 2px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+}
+.year{
+   padding: 5px; 
+   border-radius: 2px;
+    border: hidden;
+    border: 1px solid #BEBEBE;
+}
+
+.gender{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.female{
+    margin-left: 60px;
+    margin-top: 25px;
+}
+.male{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.agree{
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    width: 320px;
+    color: dimgray;
+    margin-top: 20px;
+}
+.account-box > p > a{
+    color: #5959B4;
+    text-decoration: none;
+}
+.account-box > p > a:hover{
+    text-decoration: underline;
+}
+.submit-account{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 55px;
+    margin-top: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid seagreen;
+    color: white;
+    background: linear-gradient(#67ae55, #578843);
+    box-shadow: inset 0 1px 1px #a4e388;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.submit-account:hover{
+    background-color: linear-gradient(#67ae55, #2c5115);
+    cursor: pointer;
+}
+.text2{
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 55px;
+    margin-top: 40px;
+}
+.text2 > a{
+    text-decoration: none;
+    color: #5959B4;
+}
+.text2 > a:hover{
+    text-decoration: underline;
+}
+/*------------------------------------------------Bottom-----------------------------------------------*/
+.bottom{
+    width: 100%;
+    height: 140px;
+    /*border: 2px solid red;*/
+    background-color: white;
+}
+.bottom-child1{
+    width: 70%;
+    height: auto;
+    padding-top:6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    margin-left: 200px;
+    word-spacing: 0.6em;
+}
+.bottom-child1 > a{
+    color: #5959B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.bottom-child1 > a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.bottom-child1 > button{
+    border: hidden;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+}
+.bottom-child1 > button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-img{
+    width: 10px;
+}
+.bottom-child2{
+    width: 60%;
+    height: auto;
+    padding-top:7px;
+    padding-bottom: 4px;
+    margin-left: 187px;
+    text-align: justify;
+}
+.bottom-child2 > table {
+    border-collapse: separate;
+    border-spacing: 11px 0px;
+}
+.bottom-links{
+    color: #5959B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.bottom-child2 > a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.bottom > p{
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 0.7em;
+}

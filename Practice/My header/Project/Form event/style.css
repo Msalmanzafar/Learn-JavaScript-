@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white !important;
+    background-image: url(images/images.jpg);
+    background-repeat: repeat;
+    background-repeat: cover;
+    /*background: -webkit-linear-gradient(lightskyblue,lightseagreen); */
+}
+.logo h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 10px 18px black;
+    font-weight: bold;
+    transform: skew(12deg, 1deg);
+}
+.mid{
+    position: relative;
+    top: 30px;
+    margin: 0px auto !important;
+    /*border: 1px solid red;*/
+    width: 85% !important;
+    background-color: rgba(123,123,123,0.5);
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: -5px 15px 20px black,5px -10px 15px black;
+}
+.mid h1{
+    text-shadow: 1px 4px 8px black;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+.sign-form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+.render{
+    color: red;
+    margin-left: 1%;
+    font-size: 1em;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 0.1em;
+}
+#checkName{
+    padding-bottom:5px;
+    transition: 0.5s; 
+}
+#checkEmail{
+    padding-bottom:5px;
+    transition: 0.5s; 
+}
+#checkPassword{
+    padding-bottom:5px;
+    transition: 0.5s; 
+}
+.span{
+    display: none;
+}
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    border: hidden;
+    padding: 5px 18px 5px 18px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid wheat;
+    margin-bottom: 25px;
+    outline: 0px;
+}
+.button:hover{
+    transition: 0.4s;
+    background: white;
+    color: black;
+    box-shadow: 0px 8px 18px black;
+}
+/*.Cong-message h2{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}*/

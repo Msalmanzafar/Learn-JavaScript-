@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main-container"></div>
+    <header class="box">
+        <ul>
+            <li><a class="link" href="../../projects.html">Home</a></li>
+            <li><a class="link" href="table.html">Table</a></li>
+            <li><a class="link" href="diamond.html" >Diamond</a></li>
+            <li><a class="link" href="factorial.html" >Factorial</a></li>
+        </ul>
+    </header>
+    <div class="display over">
+        <h3 id="table1"></h3>
+        <script>
+            var num;
+            function fibonacci(num){
+                var temp;
+                var p1 = 0;
+                var p2 = 1;
+                var num = +prompt("Enter Number of terms","Number");
+                if(isNaN(num)){
+                         document.getElementById("table1").innerHTML="Please Enter Valid Number...!";
+                }
+                for (var i = 0; i < num; i++){
+                    if (i <= 1){
+                        temp = i; 
+                    }
+                    else {
+                        temp = p1 + p2;
+                        p1 = p2;
+                        p2 = temp;
+                    }
+                    document.write(temp + "</br>");
+                }
+                
+                }
+            fibonacci(num);
+        </script>
+    </div>
+</body>
+</html>

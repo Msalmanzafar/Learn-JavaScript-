@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: gray !important;
+    background-image: url(images/back.jpg);
+    background-repeat: repeat;
+    background-repeat: cover;
+}
+.mid{
+     position: relative;
+    top: 100px;
+    margin: 0px auto !important;
+    /*border: 1px solid red;*/
+    width: 75% !important;
+    background-color: rgba(123,123,123,0.5);
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: -5px 15px 20px black,5px -10px 15px black;
+}
+.mid h1{
+    text-shadow: 1px 4px 8px black;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+.sign-form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: normal;
+    color: white;
+}
+.render{
+    color: red;
+    margin-left: 1%;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.span{
+    display: none;
+}
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    border: hidden;
+    padding: 5px 18px 5px 18px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid wheat;
+    margin-bottom: 25px;
+}
+.button:hover{
+    transition: 0.4s;
+    background: white;
+    color: black;
+    box-shadow: 0px 8px 18px black;
+}
+/*.Cong-message h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}*/

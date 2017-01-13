@@ -188,18 +188,27 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------Timer------------------------------*/
+#time{
+    /*position: relative;
+    top: 100px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.5em;
+    border: 2px solid reed;
+    color: black;
+    text-shadow: 1px 8px 13px gray;
+    font-weight: bold;
+}
+span{
+    font-size: 0.5em;
+}
 /*-------------------Projects.html-------------------*/
+.border blockquote{
+    border-left: none !important;
+}
+.border1 blockquote{
+    border-left: none !important;
+}
 .box{
     /*border:2px solid red;*/
     height: auto;
@@ -231,8 +240,8 @@
     transition: 1s;
 }
 .link-box1 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
     transform: rotate(2deg);
 }
 .link-box2{
@@ -251,9 +260,9 @@
     transition: 1s;
 }
 .link-box2 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
 }
 .link-box3{
      width: 350px;
@@ -271,9 +280,9 @@
     transition: 1s;
 }
 .link-box3 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
 }
 .link-box4{
      width: 350px;
@@ -291,9 +300,9 @@
     transition: 1s;
 }
 .link-box4 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
 }
 .link-box5{
      width: 350px;
@@ -311,9 +320,9 @@
     transition: 1s;
 }
 .link-box5 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
 }
 .link-box6{
      width: 350px;
@@ -331,9 +340,9 @@
     transition: 1s;
 }
 .link-box6 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
 }
 .link-box7{
      width: 350px;
@@ -351,7 +360,20 @@
     transition: 1s;
 }
 .link-box7 a img:hover{
-    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px lime;
-    transition: 0.8s;
-    transform: rotate(2deg);
+    box-shadow: 0px -1px 2px 4px lightskyblue, 0px 2px 2px 4px darkorange;
+    transition: 0.6s;
+    transform: rotate(1deg);
+}
+
+
+
+
+/*--------------------------------Coming-Soon...----------------------------------------*/
+.coming{
+    position: relative;
+    top: 70px;
+}
+.coming img{
+    width: 500px;
+    height: auto;
 }

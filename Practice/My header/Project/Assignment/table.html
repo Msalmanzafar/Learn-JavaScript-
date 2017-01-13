@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main-container"></div>
+    <header class="box">
+        <ul>
+            <li><a class="link" href="../../projects.html">Home</a></li>
+            <li><a class="link" href="table.html">Table</a></li>
+            <li><a class="link" href="diamond.html" >Diamond</a></li>
+            <li><a class="link" href="factorial.html" >Factorial</a></li>
+        </ul>
+    </header>
+    <div class="display">
+        <Button class="button-1" onclick="displayFunction()">Display</Button> 
+        <script>
+            var a = +prompt("Please Enter Your Number....","Number");
+            function displayFunction(aNumber){
+                for(var i = 1; i <=10;i++){
+                    if(isNaN(a)){
+                         document.getElementById("table1").innerHTML="Please Enter Valid Number...!";
+                    }
+                    else if(i==1){
+                        document.getElementById("table1").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==2){
+                        document.getElementById("table2").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==3){
+                        document.getElementById("table3").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==4){
+                        document.getElementById("table4").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==5){
+                        document.getElementById("table5").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==6){
+                        document.getElementById("table6").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==7){
+                        document.getElementById("table7").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==8){
+                        document.getElementById("table8").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==9){
+                        document.getElementById("table9").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    else if(i==10){
+                        document.getElementById("table10").innerHTML=( a + " x " + i + " = " +  a * i + "<br/>" );
+                    }
+                    
+                }
+            }
+        </script>
+        <h2 id="table1"></h2>
+        <h2 id="table2"></h2>
+        <h2 id="table3"></h2>
+        <h2 id="table4"></h2>
+        <h2 id="table5"></h2>
+        <h2 id="table6"></h2>
+        <h2 id="table7"></h2>
+        <h2 id="table8"></h2>
+        <h2 id="table9"></h2>
+        <h2 id="table10"></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+section{
+    margin: 0px auto;
+}
+section > div{
+    background-color: darkcyan;
+    margin: 3px;
+    height: 100px;
+    width: 100px;
+    float: left;
+    cursor: pointer;
+}

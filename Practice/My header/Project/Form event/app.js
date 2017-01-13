@@ -1,4 +1,32 @@
 
+var array = [];
+// function save(){
+//     localStorage.setItem('FName','Salman');
+//     localStorage.setItem('LName','Zafar');
+// }
+
+// function loadStorage(){
+//     var F = localStorage.getItem('FName');
+//     var L = localStorage.getItem('LName');
+//     array.push(F);
+//     array.push(L);
+//     document.getElementById("name").innerHTML= "<h3>" + F + " " + L + "</h3>";
+// }
+
+// function userArray(){
+//     localStorage.clear();
+// }
+
+// function save(){
+//     localStorage.setItem('FName','Salman');
+//     localStorage.setItem('LName','Zafar');
+// }
+
+// window.onload=function(){
+//     document.getElementById("name").focus();
+// }
+
+
 function keyPress(){
     if (event.keyCode == '13') {
         checkName();
@@ -8,7 +36,7 @@ function keyPress(){
     }
 }
 
-var array =[];
+
 /*---------------------------For Name-------------------------------------------------*/
 function checkName(){
     
@@ -53,10 +81,19 @@ function checkPassword(){
         document.getElementById("checkPassword").className="render";
         document.getElementById("checkPassword").innerHTML= mes;
     }
+    //else if(password.length <=7){
+        // var mes = "Please Enter Your 8 Digits Or Mores...!";
+        // document.getElementById("checkPassword").className="render";
+        // document.getElementById("checkPassword").innerHTML= mes;
+    //}
+    // else{
+    //     var span = document.getElementById("checkPassword");
+    //     span.style.display="none";
+    // }
 }
 
 
-//--------------------------------Main-function-----------------------------------------------
+
 function userForm(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -92,34 +129,24 @@ function userForm(){
                 type: "success",
                 },
                 function(){
-                     window.location.href=("./index.html");         
+                     window.location.href=("./login.html");         
             });
     }
     var userData= JSON.stringify(array);    
     console.log(array);
 }
 
-//--------------------------------Login-function----------------------------------------------
 function signIn(){
-    var userEmail = document.getElementById("loginEmail").value;
-    var userPassword = document.getElementById("loginPassword").value;
-	var infoName = [];
-	infoName.push(localStorage.getItem('User-Name'));
-	var infoEmail = localStorage.getItem('User-Email');
+    var userEmail = document.getElementById("email").value;
+    var userPassword = document.getElementById("password").value;
+    var infoEmail = localStorage.getItem('User-Email');
     var infoPassword = localStorage.getItem('User-Password');
     if(userEmail === infoEmail && userPassword === infoPassword){
-        swal({
-                title: "Done!",
-                text: "Login Complete..",
-                type: "success",
-                },
-                function(){
-                    window.location.href=("./index.html");
-					document.getElementById("infoName").innerHTML=infoName;					 
-            });
+        window.location.href =('./index.html');
     }
     else{
         sweetAlert("Oops...", "Something went wrong!", "error");    
     }
     
 }
+

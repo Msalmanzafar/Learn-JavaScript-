@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width:670px;
+    height: 500px;
+    border:1px solid lightgrey;
+    margin: 20px auto 0px auto;
+    background-image: url(images/1.png), url(images/2.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 8px;
+    background-size: 200px, 100% 500px;
+    box-shadow: 0px 3px 3px 3px gray;
+}
+h1{
+    position: relative;
+    top:-24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    text-shadow: 0px 2px 3px gray;
+    text-align: center;
+    /*border:2px solid blue;*/
+    background-color: #20B2AA;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 2px 3px gray;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin-left: 70px;
+}
+strong{
+    margin-right: 15px;
+}
+span{
+    text-decoration: underline;
+    font-family: Courier New, Courier, monospace;
+}

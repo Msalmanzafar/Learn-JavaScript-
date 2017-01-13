@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main-container"></div>
+    <header class="box">
+        <ul>
+            <li><a class="link" href="../../projects.html">Home</a></li>
+            <li><a class="link" href="table.html">Table</a></li>
+            <li><a class="link" href="diamond.html" >Diamond</a></li>
+            <li><a class="link" href="factorial.html" >Factorial</a></li>
+        </ul>
+    </header>
+    <div class="display dia">
+        <script>
+            function diamondFunction(n){
+                n = parseInt(n,10);
+                var i, s;
+                document.write("<pre>");
+                for(i = 1; i <= n; i++ )
+                {
+                for ( s = 1; s <= n-i; s++ )
+                {
+                    document.write("");
+                }
+                for ( s = 1; s <= i; s++ )
+                {
+                     document.write(" * ");
+                }
+                document.write("<br/>");
+                }
+                for(i = n-1; i >= 1; i-- )
+                {
+                for ( s = 1; s <= n-i; s++ )
+                {
+                    document.write("");
+                }
+                for ( s = 1; s <= i; s++ )
+                {
+                    document.write(" * ");
+                }
+                    document.write("<br/>");
+                }
+            }
+            diamondFunction(10);
+        </script>
+    </div>
+</body>
+</html>
