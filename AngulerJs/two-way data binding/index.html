@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-app="ngClassifieds" ng-controller="classifiedsCtrl">
+
+    <div>
+        <input type="text" placeholder="Enter your name" ng-model="name"/>
+        <!--<h3>{{name}}, How are you today?</h3>-->
+        <h3>{{name.first}}</h3>
+    </div>
+
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="script/app.js"></script>
+    <script src="components/classifieds.ctr.js"></script>
+</body>
+</html>
