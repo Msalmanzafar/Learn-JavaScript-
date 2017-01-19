@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+</head>
+<body>
+
+    
+    <!--<div ng-app="">
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+    </div>-->
+
+    <!--<div data-ng-app="">
+        <p data-ng-init="firstName= 'Salman'"></p>
+        <p data-ng-init="lastName= 'Zafar'"></p>
+        <h5 data-ng-bind="firstName +' '+ lastName"></h5>
+    </div>-->
+
+    <!--<div data-ng-app="" data-ng-init="person={firstName:'Salman', lastName:'Zafar'}">
+        <p data-ng-bind="person.firstName+ ' ' + person.lastName"></p>
+    </div>-->
+
+    <!--<div data-ng-app="myApp" ng-controller="myCtr">
+        <p>Your First Name: <input type="text" ng-model="firstName"></p>
+        <p>Your Last Name: <input type="text" ng-model="lastName"></p>
+        <h2 data-ng-bind="firstName+ ' ' +lastName"></h2>
+    </div>-->
+
+     <!--<div data-ng-app="myApp" ng-controller="myCtr">
+        <h2 ng-repeat="person in persons" data-ng-bind="person.firstName+ ' ' +person.lastName"></h2>
+    </div>-->
+    <!--<div data-ng-controller="myCtr">
+        <input type="text" name="firstName" ng-model="person">
+        <input type="button" value="Submit" ng-click="update(person)">
+        
+        <p ng-bind="person"></p>
+        <p ng-bind="personObject"></p>
+    </div>-->
+    <!--<form ng-app="myApp" name="myForm">
+        Email:
+        <input type="email" name="myAddress" ng-model="text">
+        <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+    </form>-->
+    <!--<form data-ng-app="myApp" name="myForm">
+        <label for="email">Email</label>
+        <input type="email" name="emailAddress" ng-model="eamil"/>
+        <p ng-bind="myForm.emailAddress.$valid"></p>
+        <p ng-bind="myForm.emailAddress.$dirty"></p>
+        <p ng-bind="myForm.emailAddress.$touched"></p>
+    </form>-->
+    <!--<p>Click the table headers to change the sorting order:</p>
+
+    <div ng-app="myApp" ng-controller="namesCtrl">
+
+        <table border="1" width="80%">
+            <tr>
+                <th ng-click="orderByMe('name')">Name</th>
+                <th ng-click="orderByMe('country')">Country</th>
+            </tr>
+            <tr ng-repeat="x in names | orderBy:myOrderBy">
+                <td ng-bind="x.name"></td>
+                <td ng-bind="x.country"></td>
+            </tr>
+        </table>
+    </div>-->
+    <!--<div ng-app="myApp" ng-controller="myCtrl">
+    <p>The url of this page is:</p>
+    <h3>{{myUrl}}</h3>
+    </div>
+
+    <p>This example uses the built-in $location service to get the absolute url of the page.</p>-->
+
+
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="controller/app.ctr.js"></script>
+</body>
+</html>

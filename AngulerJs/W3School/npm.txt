@@ -1,0 +1,44 @@
+for angular instalation:           npm install angular
+
+for angular material:              npm install angular-material mdi
+
+for server intallation to globel:  npm install http-server -g
+
+Angular important-------------------------------------------------------------------------------
+
+1. ng-app
+2. ng-init
+3. ng-model
+4. ng-bind
+
+--------------------------------------------------
+5. ng-controller
+6. angular.module
+
+app = angular.module("myApp" , [] );
+
+app.controller("myCtr", functuon() { return{ message: "Learning Stage.." } });
+-----------------------------------------------------------------------------------------------
+7. ng-repeat
+8. ng-change same as ng-keydown
+-------------------------------------------------------------------------------------------
+9. ng-directive
+
+	-using Element
+	-using Atributes
+	-using class
+	-using Comment
+--------------------------------------------------------------------------------------------
+10. form validations using Angularjs Filters
+	
+	myForm.emailAddress.$valid
+	myForm.emailAddress.$dirty
+	myForm.emailAddress.$touched
+--------------------------------------------------------------------------------------------
+11. $scope Object and $rootScope
+12. Angular Filter
+13. $location
+14. $http
+15. $setTimeout
+16. setInterval
+17. 
