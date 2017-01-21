@@ -19,3 +19,8 @@ app = angular.module("myApp" , [] );
 app.controller("myCtr", functuon() { return{ message: "Learning Stage.." } });
 -----------------------------------------------------------------------------------------------
 
+create a text.json file 
+and create and array 
+
+name,email,password,age,birthday
+

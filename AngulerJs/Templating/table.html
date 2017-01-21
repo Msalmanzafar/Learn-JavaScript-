@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Data</title>
+
+</head>
+<body ng-app="samApp" ng-controller="listController">
+
+    <md-content  >
+        <md-input-container layout="row" layout-align="cente center" >
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Search" ng-model="search.name">
+        </md-input-container>
+        <table cellpadding="8" cellspacing="3" border="1" align="center">
+            <tr>
+                <th>User Name</th>
+                <th>User Email</th>
+                <th>User Age</th>
+                <th>User Birthday</th>
+            </tr>
+            <tr  ng-repeat="data in myData | filter:search">
+                <td ng-bind="data.name"></td>
+                <td ng-bind="data.email"></td>
+                <td ng-bind="data.age"></td>
+                <td ng-bind="data.birthday"></td>
+            </tr>
+        </table>
+    </md-content>
+
+
+
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿[
+   {
+	"name":"Salman Zafar",	
+	"email": "Salman@gmail.com",
+	"age": 21,
+	"birthday": "1994-08-22"
+
+   },
+   {
+	"name": "Farhan",	
+	"email": "farhan@gmail.com",
+	"age": 22,
+	"birthday": "1993-12-02"
+
+   },
+   {
+	"name": "Ahsan",	
+	"email": "ahsan@gmail.com",
+	"age": 27,
+	"birthday": "1988-04-22"
+
+   },
+   {
+	"name": "Yasir khan",	
+	"email": "Yasirkhan@gmail.com",
+	"age": 25,
+	"birthday": "1991-08-22"
+
+   },
+
+   {
+	"name": "Adul Basit",	
+	"email": "bt@gmail.com",
+	"age": 21,
+	"birthday": "1992-11-14"
+
+   },
+   {
+	"name": "Ashu Shah",	
+	"email": "Ashu@gmail.com",
+	"age": 33,
+	"birthday": "1983-11-14"
+
+   },
+   {
+	"name": "Noor Khan",	
+	"email": "khan@gmail.com",
+	"age": 33,
+	"birthday": "1983-11-14"
+
+   }
+]

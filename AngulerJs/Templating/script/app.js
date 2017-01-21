@@ -1,13 +1,26 @@
-angular
-    .module("ngClassifieds",["ngMaterial"])
-    .config(function($mdThemingProvider){
+(function(){
+    "use strict";
 
-        $mdThemingProvider.theme('default')
-            .primaryPalette('blue')
-            .accentPalette('orange');
-})
-.directive("helloWorld", function(){
-    return{
-        template: "<h1>Salman</h1>"
-    }
-});
+    angular.module("samApp",['ngMaterial','ngAria','ngAnimate', 'ngMessages'])
+        .config(function($mdThemingProvider){
+            $mdThemingProvider.theme('default')
+                .primaryPalette('blue')
+                .accentPalette('orange');
+        })
+        .controller("listController",function($scope, $http){
+            $http.get('data/signup.json')
+                .then(function(response){
+                    $scope.myData = response.data;
+                    console.log($scope.myData);
+        });
+            
+            // $scope.submitForm = function(form) {
+            //     formData.push($scope.form);
+            //     $scope.form = {};
+            //     form.$setUntouched();
+            //     form.$setPristine();
+            //     console.log(formData);
+            // }
+        });
+})();
+
