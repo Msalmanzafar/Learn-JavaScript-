@@ -42,15 +42,48 @@
 //         });
 // })();
 
-var app = angular.module('user',['ngMaterial']);
-    app.controller("myUser", function($scope) {
-        $scope.name = "salman";
-       $scope.userInfo ={
-           name: "Salman",
-           address: "Satadium Road Karachi",
-           nationality: "Pakistani"
-       }
-    })
+// var app = angular.module('user',['ngMaterial']);
+//     app.controller("myUser", function($scope) {
+//         $scope.name = "salman";
+//        $scope.userInfo ={
+//            name: "Salman",
+//            address: "Satadium Road Karachi",
+//            nationality: "Pakistani"
+//        }
+//     })
+
+    //--------Link in Custom directive--------------------------------------------------------
+    //     .directive('mdLink',function () {
+    //         function linkOf(scope,elem,attrs, ctrl) {
+    //             elem.bind('click',function () {
+    //                 console.log(elem);
+    //                 console.log(scope);
+    //                 console.log(attrs);
+    //                 console.log(ctrl);
+    //             });
+    //         }
+    //         // scope.$watch(attrs.mdLink,function (value) {
+    //         //      userInfo.name = value;
+    //         //
+    //         // });
+    //         // return{
+    //         //     restrict: "A",
+    //         //     template: "<h1>Salman Zafar</h1>",
+    //         //     link: linkOf
+    //         // }
+    //         return{
+    //             restrict: "A",
+    //             scope: {
+    //                 info: '='
+    //             },
+    //             template: "<input type='text' ng-model='name'/><h1>Name: {{name}}</h1>",
+    //             link: linkOf,
+    //             controller: function($scope){
+    //                 console.log($scope.info);
+    //             }
+    //         }
+    //     });
+
     //-------------------Custom-Directive----------------------------------
     // .directive("firstHeading",function () {
     //     return {
@@ -75,35 +108,55 @@ var app = angular.module('user',['ngMaterial']);
     //         template: "<h4>This is my Fourth Heading</h4>"
     //     }
     // })
-    //--------------------get data from controller------------------
-    .directive("newUser", function () {
-        return{
+    //--------------------get data to controller using isolated Scope------------------
+    // .directive("newUser", function () {
+    //     return{
+    //         scope: {
+    //             name:'@'
+    //         },
+    //         template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
+    //     }
+    // })
+    //     .directive("mdCheck", function () {
+    //         return{
+    //             scope: {
+    //                 name:'='
+    //             },
+    //             template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
+    //         }
+    //     })
+    //     .directive("mdInfo", function () {
+    //         return{
+    //             scope: {
+    //                 name:'&'
+    //             },
+    //             template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
+    //         }
+    //     })
+    //--------templateUrl in Custom directive--------------------------------------------------------
+    //
+    //     .directive("getData", function () {
+    //         return{
+    //             templateUrl: 'my_customer.html'
+    //         }
+    //     })
+
+
+    var app = angular.module('phoneApp', []);
+
+    app.controller("AppCtrl", function ($scope) {
+        $scope.callHome = function (mes,mas) {
+            alert(mes);
+            alert(mas);
+        };
+    });
+
+    app.directive("phone", function () {
+        return {
             scope: {
-                name:'@'
+                dial: "&"
             },
-            template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
-        }
-    })
-        .directive("mdCheck", function () {
-            return{
-                scope: {
-                    name:'='
-                },
-                template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
-            }
-        })
-        .directive("mdInfo", function () {
-            return{
-                scope: {
-                    name:'&'
-                },
-                template: '<input ng-model="name"><h2>Name: {{name}}'+"<br/>"+' Address: {{address}}</h2>'
-            }
-        })
-        .directive("getData", function () {
-            return{
-                templateUrl: 'my_customer.html'
-            }
-        })
-
-
+            template: '<input type="text" ng-model="value">' +'<input type="text" ng-model="value2">'+
+            '<div class="button" ng-click="dial({message:value,message2:value2})">Call home!</div>',
+        };
+    });

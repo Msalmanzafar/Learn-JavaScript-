@@ -6,19 +6,28 @@
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css"/>
     <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css" media="all"/>
 </head>
-<body data-ng-app="user" data-ng-controller="myUser">
+<body>
 
 
+    <div ng-app="phoneApp">
+        <div ng-controller="AppCtrl">
+
+            <div phone dial="callHome(message,message2)"></div>
+        </div>
+    </div>
+
+    <!--<div md-link info="userInfo">-->
+    <!--</div>-->
     <!--<div>-->
         <!--<get-data></get-data>-->
     <!--</div>-->
-    <div style="position: relative;top:150px">
-        {{name}}
-        <br/>
-        <new-user name="{{name}}"></new-user>
-        <md-check name="name"></md-check>
-        <md-info name="{{name}}"></md-info>
-    </div>
+    <!--<div style="position: relative;top:150px">-->
+        <!--{{name}}-->
+        <!--<br/>-->
+        <!--<new-user name="{{name}}"></new-user>-->
+        <!--<md-check name="name"></md-check>-->
+        <!--<md-info name="{{name}}"></md-info>-->
+    <!--</div>-->
     <!--<div data-ng-controller="parent">-->
         <!--<input type="text" ng-model="name">-->
         <!--Parent Name: {{name}}-->

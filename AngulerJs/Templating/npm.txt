@@ -30,7 +30,16 @@ app.controller("myCtr", functuon() { return{ message: "Learning Stage.." } });
 	i. "uppercase" Format a string to upper case.
 -------------------------------------------------------------------------------------------------
 8. $http
+9. custom directive
 
+	return{
+		restrict:
+		link:
+		template:
+		templateUrl:
+		controller:
+	}
+--------------------------------------------------------------------------------------------------
 create a text.json file 
 and create and array 
 
