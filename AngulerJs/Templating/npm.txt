@@ -18,6 +18,18 @@ app = angular.module("myApp" , [] );
 
 app.controller("myCtr", functuon() { return{ message: "Learning Stage.." } });
 -----------------------------------------------------------------------------------------------
+7. Filters
+	a. "currency" Format a number to a currency format.
+	b. "date" Format a date to a specified format.
+	c. "filter" Select a subset of items from an array.
+	d. "json" Format an object to a JSON string.
+	e. "limitTo" Limits an array/string, into a specified number of elements/characters.
+	f. "lowercase" Format a string to lower case.
+	g. "number" Format a number to a string.
+	h. "orderBy" Orders an array by an expression.
+	i. "uppercase" Format a string to upper case.
+-------------------------------------------------------------------------------------------------
+8. $http
 
 create a text.json file 
 and create and array 

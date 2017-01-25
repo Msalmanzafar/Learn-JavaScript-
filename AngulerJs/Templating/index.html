@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Sign Up</title>
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css"/>
     <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css" media="all"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    
+
     <md-toolbar layout="top center">
         <div class="md-toolbar-tools">
             <span class="md-flex">Sign Up</span>
@@ -17,7 +19,7 @@
 
     <md-content layout-padding ng-app="samApp" ng-controller="listController" >
         <div layout="row" layout-align="center center">
-        <div flex-sm="100" flex-gt-sm="90" flex-gt-md="70" md-whiteframe='11'>
+        <div flex-sm="100" flex-gt-sm="90" flex-gt-md="80" md-whiteframe='11'>
             <md-content class="md-padding">
                 <form name="signUpForm" ng-submit="submitForm(signUpForm)" novalidate>
                     <md-input-container class="md-block">
