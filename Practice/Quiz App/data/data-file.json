@@ -1,0 +1,17 @@
+[
+   {
+	"heading": "Basic JavaScript Test",
+	"questions": 25,
+	"time": "15 Minutes"
+   },
+   {
+	"heading": "Basic CSS3 Test",
+	"questions": 25,
+	"time": "15 Minutes"
+   },
+   {
+	"heading": "Basic HTML5 Test",
+	"questions": 25,
+	"time": "15 Minutes"
+   }
+]

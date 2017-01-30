@@ -40,6 +40,17 @@ app.controller("myCtr", functuon() { return{ message: "Learning Stage.." } });
 		controller:
 	}
 --------------------------------------------------------------------------------------------------
+10. ngRoute
+	-ngRoute is developed by angular team
+	-ngRoute implements routing base on the route URL 
+	
+11. ui.route
+	-ui.route is 3rd party module
+	-ui.route implements routing base on the state of the application
+	-some Additional features 
+		Nested states and views 
+		Multiple named views
+-----------------------------------------------------------------------------------------------------
 create a text.json file 
 and create and array 
 

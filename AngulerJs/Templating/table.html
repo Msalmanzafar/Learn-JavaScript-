@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css"/>
     <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css" media="all"/>
 </head>
-<body>
+<body >
 
-
-    <div ng-app="phoneApp">
-        <div ng-controller="AppCtrl">
-
-            <div phone dial="callHome(message,message2)"></div>
-        </div>
+    <div ng-app="myApp">
+        <a ui-sref="contact">Contact</a>
+        <a ui-sref="project">Project</a>
+        <a ui-sref="about">AboutUs</a>
+        <div ui-view></div>
     </div>
+    <!--<div ng-app="myApp" >-->
+        <!--<user-name></user-name>-->
+    <!--</div>-->
 
     <!--<div md-link info="userInfo">-->
     <!--</div>-->
@@ -77,10 +79,13 @@
 
 
     <script src="node_modules/angular/angular.js"></script>
+    <!--<script src="node_modules/angular-route/angular-route.min.js"></script>-->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="node_modules/angular-animate/angular-animate.js"></script>
     <script src="node_modules/angular-aria/angular-aria.js"></script>
     <script src="node_modules/angular-material/angular-material.js"></script>
     <script src="node_modules/angular-messages/angular-messages.min.js"></script>
     <script src="script/app.js"></script>
+    <!--<script src="script/user-components.js"></script>-->
 </body>
 </html>

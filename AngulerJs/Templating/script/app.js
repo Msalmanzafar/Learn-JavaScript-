@@ -1,3 +1,57 @@
+// angular.module("myApp",['ngRoute'])
+//     .config(function ($routeProvider,$locationProvider) {
+//         $routeProvider
+//             .when("/", {
+//                 templateUrl : "home.html"
+//
+//             })
+//             .when("/project", {
+//                 templateUrl : "project.html"
+//
+//             })
+//             .when("/about", {
+//                 templateUrl : "about.html"
+//
+//             })
+//             .otherwise({redirectTo:"/"});
+//             $locationProvider.hashPrefix('');
+//
+//     })
+
+angular.module("myApp",['ui.router'])
+    .config(function ($stateProvider,$urlRouterProvider) {
+        $urlRouterProvider.otherwise('/about');
+        $stateProvider
+            .state('home',{
+                url:'/home',
+                templateUrl:'home.html'
+            })
+            .state('project',{
+                url:'/project',
+                templateUrl:'project.html'
+            })
+            .state('about',{
+                url:'/about',
+                templateUrl:'about.html'
+            })
+            .state('contact',{
+                url:'/contact',
+                template:'<h1>This my contact page</h1>'
+            });
+
+            // .state('about',{
+            //     url:'/about',
+            //     templateUrl:'about.html'
+            // })
+
+
+    })
+
+// angular.module("myApp",[])
+//     .controller("myCtr",function () {
+//
+//     })
+
 // (function(){
 //     "use strict";
 //
@@ -142,21 +196,24 @@
     //     })
 
 
-    var app = angular.module('phoneApp', []);
+    // var app = angular.module('phoneApp', []);
 
-    app.controller("AppCtrl", function ($scope) {
-        $scope.callHome = function (mes,mas) {
-            alert(mes);
-            alert(mas);
-        };
-    });
+    // app.controller("AppCtrl", function ($scope) {
+    //     $scope.callHome = function (mes,mas) {
+    //         alert(mes);
+    //         alert(mas);
+    //     };
+    // });
 
-    app.directive("phone", function () {
-        return {
-            scope: {
-                dial: "&"
-            },
-            template: '<input type="text" ng-model="value">' +'<input type="text" ng-model="value2">'+
-            '<div class="button" ng-click="dial({message:value,message2:value2})">Call home!</div>',
-        };
-    });
+    // app.directive("phone", function () {
+    //     return {
+    //         scope: {
+    //             dial: "&"
+    //         },
+    //         template: '<input type="text" ng-model="value">' +'<input type="text" ng-model="value2">'+
+    //         '<div class="button" ng-click="dial({message:value,message2:value2})">Call home!</div>',
+    //     };
+    // });
+
+
+

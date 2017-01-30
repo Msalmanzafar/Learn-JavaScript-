@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <title>Quiz App</title>
@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="bootstrap.min.css"/>
 </head>
-<body>
-
+<body ng-app="myApp">
+<!--
     <div class="container-flex header navbar-fixed-top">
          <div class="col-lg-12 ">
              <h1>Quiz</h1>
          </div>
-    </div>
+    </div>-->
 
-    <div class="container" ng-controller="appContr">
+    <div class="container " ng-controller="appContr">
          <div class="row">
-
+             <div class="col-sm-6" ng-repeat="list in list.quizData">
+                 {{quizData}}
+                 <div class="well well-sm">
+                     <div class="row">
+                         <div class="col-sm-6">
+                             <h4 ng-bind="quizData.heading">sadas</h4>
+                             <p><strong>Questions:</strong>asdas{{quizData.questions}}</p>
+                             <p><strong>Time:</strong>asdas{{quizData.time}}</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
          </div>
     </div>
 
